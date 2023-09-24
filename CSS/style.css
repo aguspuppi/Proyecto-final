@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300&family=Smooch+Sans:wght@500&display=swap');
+
+:root {
+    /*Palette*/
+    --primary-solid: #04010d;
+
+
+    --secondary-solid: #e0dedd;
+
+
+    --dark-solid: #1F1F1F;
+
+
+    /*Typography*/
+    --base-font: 'Poppins', sans-serif;
+
+    /*Font-sizes*/
+    --font-display: 4.6em;
+    --font-jumbo: 3.8em;
+    --font-xlarge: 3em;
+    --font-large: 2.4em;
+    --font-medium: 1.8em;
+    --font-small: 1.6em;
+    --font-xsmall: 1.4em;
+
+    /*Spacing*/
+    --spacing-128: 12.8rem;
+    --spacing-68: 6.8rem;
+    --spacing-36: 3.6rem;
+    --spacing-28: 2.8rem;
+    --spacing-24: 2.4rem;
+    --spacing-20: 2rem;
+    --spacing-16: 1.6rem;
+    --spacing-12: 1.2rem;
+    --spacing-8: 0.8rem;
+
+
+
+
+}
+
+
+/*normalización estándar
+*/
+
+
+*,
+* ::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+
+    font-family: inherit;
+    color: inherit;
+    /*toma el color heredado*/
+}
+
+body {
+    background-color: var(--secondary-solid);
+    font-family: var(--base-font);
+}
+
+header {
+    background-color: var(--primary-solid);
+    color: var(--secondary-solid);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/* Header*/
+.img_logo {
+    border-radius: 50%;
+    max-width: 80px;
+
+    padding: 5px;
+}
+
+.logo_carro {
+    width: 21px;
+    height: auto;
+    padding: 2px;
+}
+
+
+.burger_icon {
+    display: block;
+    padding: 15px;
+    margin: 10px;
+
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--primary-solid);
+    color: var(--secondary-solid);
+    display: none;
+    width: 100%;
+    transition: background .3s ease-in-out;
+    font-size: 12px;
+
+}
+
+.burger_icon:hover+.menu,
+.menu:hover {
+    display: block;
+}
+
+
+ul {
+    list-style-type: none;
+    text-decoration: none;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing-8) var(--spacing-16);
+    display: inline-block;
+    transition: background .3s ease-in-out;
+    position: relative;
+}
+
+.link_lis:hover {
+    background-color: rgba(255, 51, 51, 0.9);
+    transition: background .3s ease-in-out;
+}
+
+
+/*Main*/
+.banner {
+    background-image: url(../IMG/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: var(--spacing-68);
+    text-shadow: 5px 4px 5px rgb(240, 240, 243);
+
+}
+
+h4 {
+    background-color: #535353;
+    margin: var(--spacing-12) 0;
+    padding: var(--spacing-8);
+    width: 100%;
+}
+
+.precio {
+    font-style: var(--font-medium);
+    font-size: 25px;
+    color: #000000;
+}
+
+div h4 {
+    background-color: rgba(110, 108, 108, 0.8);
+
+    margin: var(--spacing-12) 0;
+    padding: var(--spacing-8);
+    width: 100%;
+}
+
+/*Productos*/
+.grid_productos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+}
+
+.card_prod {
+    width: 80%;
+    align-items: center;
+    box-shadow: 0px 2px 4px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 25px;
+    padding: 10px;
+
+
+}
+
+.foto_producto {
+    padding: 10px;
+    height: auto;
+    width: 80%;
+
+}
+
+button {
+    padding: 5px;
+    margin: 10px;
+    background-color: var(--secondary-solid);
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 2px 2px 3px rgba(0, 0, 0, 0.1);
+    font-family: var(--base-font);
+}
+
+button:hover {
+    background-color: rgba(110, 108, 108, 0.5);
+    transition: background .3s ease-in-out;
+
+}
+
+/*Footer*/
+
+.footer {
+    display: flex;
+    font-display: row;
+    font-size: 10px;
+    background-color: var(--primary-solid);
+    color: var(--secondary-solid);
+    justify-content: space-between;
+
+    padding: 15px;
+
+
+}
+
+.menu_footer li:hover {
+    background-color: rgba(255, 51, 51, 0.9);
+    transition: background .3s ease-in-out;
+}
+
+.logo_footer {
+    border-radius: 50%;
+    max-width: 80px;
+    padding: 5px;
+}
+
+.derechos {
+    font-size: 8px;
+    text-align: center;
+    background-color: rgba(255, 51, 51, 0.9);
+    color: var(--secondary-solid);
+}
+
+/* Formulario*/
+form {
+    width: 30%;
+    font-size: 15px;
+
+}
+
+@media screen and (min-width: 768px) {
+    .card_prod {
+        width: 40%;
+        height: auto;
+    }
+
+    .grid_productos {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: stretch;
+
+    }
+    .img_logo {
+        border-radius: 50%;
+        max-width: 100px;
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .card_prod {
+        width: 30%;
+        height: auto;
+    }
+
+    .grid_productos {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: stretch;
+
+    }
+    .img_logo {
+        border-radius: 50%;
+        max-width: 120px;
+        padding: 10px;
+    }
+}   
