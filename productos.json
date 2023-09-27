@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "nombre": "Fogonero",
+        "descripcion": "Fogonero de cemento con piedras de mármol. Medida: 22 cm de diametro",
+        "precio": 3000,
+        "imagen": "IMG/Fogonero.png"
+    },
+    {
+        "id": 2,
+        "nombre": "Terrario",
+        "descripcion": "Terrario con cuenco de cemento. Medida: 15cm de diametro",
+        "precio": 1200,
+        "imagen": "IMG/Terrario.png"
+    },
+    {
+        "id": 3,
+        "nombre": "Maceta Annie",
+        "descripcion": "Maceta hexagonal de cemento con plato. Medida: 9cm x 6cm",
+        "precio": 600,
+        "imagen": "IMG/Hexa con plato.png"
+    },
+    {
+        "id": 4,
+        "nombre": "Maceta Cleta",
+        "descripcion": "Maceta hexagonal baja de cemento. Medida: 7cm x 5cm",
+        "precio": 300,
+        "imagen": "IMG/Hexa baja.png"
+    },
+    {
+        "id": 4,
+      "nombre": "Mini maceta",
+      "descripcion": "Maceta mini de cemento0 Ideal Souvenirs. Medidas 5cm x 5cm",
+      "precio": 120,
+      "imagen": "IMG/Mini colores.png"
+    }
+]
