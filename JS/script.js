@@ -1,3 +1,4 @@
+//Toma datos de json//
 fetch("productos.json")
   .then((respuesta) => respuesta.json())
   .then((datos) => localStorage.setItem("productos", JSON.stringify(datos)));
@@ -13,8 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
         `<h4>${producto.nombre}</h4>
         <img class="foto_producto" src="${producto.imagen}" alt="${producto.nombre}">
     
-    <button>Ver detalles</button>
-    <button>Comprar</button>`;
+    <button>Ver detalles</button>`;
     gridItem.addEventListener("click", () =>{
       mostrarDetalleProducto(producto)
     });
@@ -24,5 +24,5 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function mostrarDetalleProducto(producto){
-window.location.href = `index.html?id=${producto.id}`;
+window.location.href = `detalle.html?id=${producto.id}`;
 }
