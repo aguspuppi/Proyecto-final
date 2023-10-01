@@ -1,11 +1,28 @@
-document.addEventListener("DOMContentLoaded",() => {
-    const detalleProductos = document.getElementById("grid_productos");
+fetch("productos.json")
+  .then((respuesta) => respuesta.json())
+  .then((datos) => localStorage.setItem("productos", JSON.stringify(datos)));
 
-    const urlParams = new URLSearchParams(window.location.search);
-  const idProducto = urlParams.get("id");
-
+document.addEventListener("DOMContentLoaded", () => {
+  const detalleProductos = document.getElementById("grid_productos")
   const datosProductos = JSON.parse(localStorage.getItem("productos"));
-  const productoSeleccionado = datosProductos.productos.find(
-    (producto) => producto.id == idProducto
-  );
-})
+  if (datosProductos && datosProductos.length > 0) {
+    datosProductos.forEach((producto) => {
+      const gridItem = document.createElement("div");
+      gridItem.classList.add("card_prod");
+      gridItem.innerHTML =
+        `<h4>${producto.nombre}</h4>
+        <img class="foto_producto" src="${producto.imagen}" alt="${producto.nombre}">
+    
+    <button>Ver detalles</button>
+    <button>Comprar</button>`;
+    gridItem.addEventListener("click", () =>{
+      mostrarDetalleProducto(producto)
+    });
+      detalleProductos.appendChild(gridItem);
+    });
+  }
+});
+
+function mostrarDetalleProducto(producto){
+window.location.href = `index.html?id=${producto.id}`;
+}

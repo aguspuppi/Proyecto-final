@@ -29,9 +29,9 @@
     },
     {
         "id": 4,
-      "nombre": "Mini maceta",
-      "descripcion": "Maceta mini de cemento0 Ideal Souvenirs. Medidas 5cm x 5cm",
-      "precio": 120,
-      "imagen": "IMG/Mini colores.png"
+        "nombre": "Mini maceta",
+        "descripcion": "Maceta mini de cemento0 Ideal Souvenirs. Medidas 5cm x 5cm",
+        "precio": 120,
+        "imagen": "IMG/Mini colores.png"
     }
 ]
