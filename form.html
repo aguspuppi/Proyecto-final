@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de contacto</title>
+    <link rel="icon" href="./IMG/Logo decorando.png" type="logo-icon">
+    <meta name="author" content="Agustina Puppi">
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
 
@@ -53,18 +55,21 @@
         </section>
     </header>
     <main>
+        <section class="form">
         <h2>Formulario de contacto</h2>
-        <form action="">
+        <form action="https://formspree.io/f/xrgwokez">
                     <label for="name">Nombre</label>
                     <input type="text" id="name"><br>
                     <label for="mail">Mail</label>
                     <input type="mail" id="mail"><br>
                     <label for="telefono">Telefono</label>
-                    <input type="number" id="telefono"><br>
-                    <label for="mensaje">Dejanos tu mensaje</label>
-                    <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-               
+                    <input type="text" id="telefono"><br>
+                    <label for="mensaje">Dejanos tu mensaje</label><br>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escribe tu mensaje aqui"></textarea><br>
+               <button type="reset"><a href="./index.html">Volver</a></button>
+               <button type="submit">Enviar</button>
         </form>
+    </section>
     </main>
     <footer>
         <div class="footer">

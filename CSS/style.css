@@ -240,9 +240,12 @@ button:hover {
 }
 
 /* Formulario*/
-form {
-    width: 30%;
+.form {
+    display: flex;
+    flex-direction: column;
+   margin: 20px;
     font-size: 15px;
+    padding: 10px;
 
 }
 /*Pagina de detalles*/
